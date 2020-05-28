@@ -1,0 +1,664 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(+100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromAbove {
+    0% {
+      transform: translateY(+100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    font-weight: bold;
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15vh;
+    background-color: #35363A;
+    height: 100vh;
+}
+
+#img_quote{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+#description{
+    padding: 2.5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px black;
+    animation: 0.8s ease-out 0s 1 slideInFromAbove;
+}
+
+#text{
+    color: #EF5351;
+    font-family: 'Merriweather Sans', sans-serif; ;
+    font-weight: 800;
+}
+
+.profile_img{
+    border: 1px solid white;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-image: url("Me.jpeg");
+    background-size: cover;
+    filter: brightness(95%);
+    filter: grayscale(100%);
+    box-shadow: 1px 1px 6px 1px rgb(0, 0, 0);
+    animation: 0.8s ease-out 0s 1 slideInFromLeft;
+}
+
+#quote_container{
+    width: 30em;
+    text-align: center;
+}
+
+#quote{
+    color: white;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 1px black;
+    animation: 0.8s ease-out 0s 1 slideInFromRight;
+    margin-left: 0.7em;
+    line-height: 0.9;
+}
+
+#q_text{
+    font-size: 0.4em;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 800;
+}
+
+#author{
+    font-size: 0.45em;
+    text-decoration: underline;
+    font-family: 'Merriweather', serif;
+    text-align: right;
+}
+
+.fa, .fas {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+.section.skills .box .content .columns .column {
+    padding: 50px 30px;
+    border-bottom: 1px solid #E6ECF8;
+    border-right: 0px solid #E6ECF8;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    text-align: center;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    box-shadow: 1px 2px 10px grey;
+    border-radius: 10px;
+    width: 50rem;
+    margin-bottom: 10vh;
+    
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: bold;
+    font-style: normal;
+    color: #EF5351;
+    padding-bottom: .4em;
+    font-size: 80px;
+}    
+
+.has-text-primary {
+    color: #EF5351 !important;
+    text-align: center !important;
+}
+
+.title{
+    font-family: 'Merriweather Sans', sans-serif; ;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #807c7c;
+    text-align: center;
+    color: #35363A;
+    font-size: 2em !important;
+}
+
+.skills-text{
+    padding: 4px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em !important;
+}
+
+.column p{
+    padding: 4px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+.column li{
+    padding: 2px;
+    list-style-type: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #35363A ;
+    height: 100vh;
+    padding-top: 10vh ;
+}
+
+#pf_title{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+#portText{
+    font-size: 4em;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 1.5rem !important;
+    text-shadow: 1px 1px 1px rgb(133, 127, 127);
+}
+
+footer {
+    font-weight: 300;
+    color: white;
+}
+
+#link{
+    color: #35363A;
+    vertical-align: middle;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+}
+    
+@media (max-device-width : 320px) {
+    /* 2Extra small devices (portrait phones, less than 320px) */
+
+#quote_container {
+        width: 18em;
+}
+
+#q_text {
+    font-size: 0.3em;
+}
+
+.profile_img {
+    width: 25vh;
+    height: 25vh;
+}
+
+#img_quote {
+    flex-direction: column;
+}
+
+#quote{
+    margin: 0;
+}
+
+#author{
+    font-size: 1rem !important;
+}
+
+#description {
+    padding: 10%;
+    height: 25vh;
+}
+
+#me{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.fas{
+    display: none;
+}
+
+#skills{
+    padding-top: 7vh;
+    height: 100vh !important;
+}
+
+.column {
+    display: contents;
+}
+
+.skills-text{
+    font-size: .8em;
+}
+
+#portfolio {
+    height: 100vh !important;
+    padding-top: 9vh ;
+}
+
+#projects{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.card{
+    margin: .3em;
+    width: 12rem !important;
+    height: 9rem;
+}
+
+.card-img-top{
+    height: 7rem;
+}
+
+.card-text{
+    font-size: 1rem !important;
+}
+
+.card-body {
+    padding: 0;
+}
+
+}
+
+@media (min-device-width : 321px) and (max-device-width : 575px) {
+    /* Extra small devices (portrait phones, less than 576px) */
+
+#quote_container {
+        width: 21em;
+}
+
+#q_text {
+    font-size: 0.3em;
+}
+
+.profile_img {
+    width: 25vh;
+    height: 25vh;
+}
+
+#img_quote {
+    flex-direction: column;
+}
+
+#quote{
+    margin: 0;
+}
+
+#author{
+    font-size: 1rem !important;
+}
+
+#description {
+    padding: 10%;
+    height: 25vh;
+}
+
+#me{
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.fas{
+    display: none;
+}
+
+#skills{
+    padding-top: 7vh;
+    height: 100vh !important;
+}
+
+.column {
+    display: contents;
+}
+
+#portfolio {
+    height: 100vh !important;
+    padding-top: 9vh ;
+}
+
+#projects{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.card{
+    margin: .8rem;
+    width: 12rem !important;
+    height: 9rem;
+}
+
+.card-img-top{
+    height: 7rem;
+}
+
+.card-text{
+    font-size: 1rem !important;
+}
+
+.card-body {
+    padding: 0;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Small devices (landscape phones, 576px and up) */
+    
+    #img_quote{
+        flex-direction: column;
+    }
+    
+    .profile_img{
+        width: 30vh;
+        height: 30vh;
+    }
+    
+    #quote_container{
+        width: 20em;
+        text-align: center;
+    }
+    
+    #quote{
+        margin-left: 0;
+        font-size: 2.4em;
+    }
+    
+    #me{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    .fa-chevron-circle-down{
+        display: none !important;
+    }
+    
+    .btn{
+        margin-top: 3rem;
+    }
+    
+    #description{
+        margin-top: 2rem;
+        padding: 0;
+    }
+    
+    .section.skills .box .content .columns .column {
+        padding: 50px 30px;
+        border-bottom: 1px solid #E6ECF8;
+        border-right: 0px solid #E6ECF8;
+    }
+    
+    .column {
+        display: contents;
+        
+        
+    }
+    
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: bold;
+        font-style: normal;
+        color: #EF5351;
+        padding-bottom: .4em;
+        font-size: 80px;
+    }    
+    
+    .has-text-primary {
+        color: #EF5351 !important;
+        text-align: center !important;
+    }
+    
+    .title{
+        font-family: 'Merriweather Sans', sans-serif; ;
+        font-weight: 800;
+        text-shadow: 1px 1px 1px #807c7c;
+        text-align: center;
+        color: #35363A;
+    }
+    
+    .skills-text{
+        font-size: 1.2em;
+        padding: 12px;
+    }
+    
+    .column p{
+        padding: 10px;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+    
+    .column li{
+        padding: 7px;
+        list-style-type: none;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+    
+    #portfolio {
+        height: 100vh !important;
+        padding-top: 9vh;
+    }
+    
+    #projects{
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .card{
+        margin: 1.5em;
+        width: 20rem !important;
+        height: 15rem;
+    }
+    
+    .card-img-top{
+        height: 12rem;
+    }
+    
+    .card-text{
+        font-size: 1rem !important;
+    }
+    
+    .card-body {
+        padding: 0;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* Medium devices (tablets, 768px and up) */
+#img_quote{
+    flex-direction: column;
+}
+
+.profile_img{
+    width: 30vh;
+    height: 30vh;
+}
+
+#quote_container{
+    width: 25em;
+    text-align: center;
+}
+
+#quote{
+    margin-left: 0;
+    font-size: 2.4em;
+}
+
+#me{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.fa-chevron-circle-down{
+    display: none !important;
+}
+
+.btn{
+    margin-top: 6em;
+}
+
+#description{
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.section.skills .box .content .columns .column {
+    padding: 50px 30px;
+    border-bottom: 1px solid #E6ECF8;
+    border-right: 0px solid #E6ECF8;
+}
+
+.column {
+    display: contents;
+    
+    
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: bold;
+    font-style: normal;
+    color: #EF5351;
+    padding-bottom: .4em;
+    font-size: 80px;
+}    
+
+.has-text-primary {
+    color: #EF5351 !important;
+    text-align: center !important;
+}
+
+.title{
+    font-family: 'Merriweather Sans', sans-serif; ;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #807c7c;
+    text-align: center;
+    color: #35363A;
+}
+
+.skills-text{
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+.column p{
+    padding: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.column li{
+    padding: 7px;
+    list-style-type: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+#portfolio {
+    height: 100vh !important;
+    padding-top: 9vh;
+}
+
+#projects{
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.card{
+    margin: 1.5em;
+    width: 20rem !important;
+    height: 15rem;
+}
+
+.card-img-top{
+    height: 12rem;
+}
+
+.card-body {
+    padding: 0;
+}
+
+}    
