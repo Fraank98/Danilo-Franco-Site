@@ -1,4 +1,4 @@
-let words = ["Danilo","an Aspiring Developer","a Technology Addicted","a AI Lover"];
+let words = ["Danilo","a Developer Student","a Technology Addict","a A.I. Lover"];
 let cit = [ 
     'The happiness of your life depends upon the quality of your thoughts.',
     'It always seems impossible until it is done.',
@@ -27,16 +27,16 @@ window.addEventListener("load", function(){
             });
 
             typewriter.pauseFor(400)
-                .typeString('Danilo')
+                .typeString(words[1])
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('a Developer Student')
+                .typeString(words[2])
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('a Technology Addicted')
+                .typeString(words[3])
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('an A.I. Lover')
+                .typeString(words[4])
                 .pauseFor(1000)
                 .deleteAll()
                 .start();
