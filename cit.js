@@ -1,4 +1,4 @@
-let words = ["Danilo","a Developer Student","a Technology Addict","a A.I. Lover"];
+let words = ["Danilo","a Developer Student","a Technology Addict","an A.I. Lover"];
 let cit = [ 
     'The happiness of your life depends upon the quality of your thoughts.',
     'It always seems impossible until it is done.',
