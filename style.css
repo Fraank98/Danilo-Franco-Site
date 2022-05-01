@@ -156,6 +156,7 @@ header{
 .columnSkillsDetailes{
     display: flex;
     flex-directions: row;
+    justify-content: center;
     text-align: center;
 }
 
